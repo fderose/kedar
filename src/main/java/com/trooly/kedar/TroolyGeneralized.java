@@ -42,9 +42,7 @@ public class TroolyGeneralized {
         Map<Attribute, List<Long>> recordsByAttribute = new HashMap<>();
         Map<Long, List<Attribute>> attributesByRecord = new HashMap<>();
 
-
         for (Record record : recordsById.values()) {
-
             attributesByRecord.put(record.id, new ArrayList<>());
             for (Attribute attribute : record.attributes) {
                 if (!recordsByAttribute.containsKey(attribute)) {
