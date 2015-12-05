@@ -34,6 +34,6 @@ public class Attribute implements Comparable<Attribute> {
 
     @Override
     public int compareTo(Attribute attribute) {
-        return type.compareTo(attribute.type);
+        return -type.toString().compareTo(attribute.type.toString()); // For now just rely on "name" being greater than the other attribute names to order the name attribute first
     }
 }

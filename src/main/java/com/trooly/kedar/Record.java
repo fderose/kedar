@@ -30,7 +30,7 @@ public class Record {
             if (first) {
                 first = false;
             } else {
-                sb.append("|");
+                sb.append(",");
             }
           sb.append(attr.toString());
         }
