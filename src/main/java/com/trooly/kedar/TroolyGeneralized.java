@@ -46,10 +46,12 @@ public class TroolyGeneralized {
             List<Attribute> attributes = new ArrayList<>();
             attributesByRecord.put(record.id, attributes);
             for (Attribute attribute : record.attributes) {
-                if (!recordsByAttribute.containsKey(attribute)) {
-                    recordsByAttribute.put(attribute, new ArrayList<>());
+                List<Long> records = recordsByAttribute.get(attribute);
+                if (records == null) {
+                    records = new ArrayList<>();
+                    recordsByAttribute.put(attribute, records);
                 }
-                recordsByAttribute.get(attribute).add(record.id);
+                records.add(record.id);
                 attributes.add(attribute);
             }
         }
