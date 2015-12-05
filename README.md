@@ -17,22 +17,22 @@ TroolyGeneralized creates clusters (transitive closures) of entities that are co
 
 So, for example, if you run TroolyGeneralized on the file data/input, it produces the following output:
 
-&nbsp;&nbsp;name:c,email:e3,email:e2
-&nbsp;&nbsp;name:d,email:e3,email:e4
-&nbsp;&nbsp;name:e,email:e5,email:e4
-&nbsp;&nbsp;name:f,email:e5,email:e6,address:a2
-&nbsp;&nbsp;name:h,address:a2
-&nbsp;&nbsp;name:j,address:a2
-&nbsp;&nbsp;name:l,address:a1
+&nbsp;&nbsp;name:c,email:e3,email:e2<br>
+&nbsp;&nbsp;name:d,email:e3,email:e4<br>
+&nbsp;&nbsp;name:e,email:e5,email:e4<br>
+&nbsp;&nbsp;name:f,email:e5,email:e6,address:a2<br>
+&nbsp;&nbsp;name:h,address:a2<br>
+&nbsp;&nbsp;name:j,address:a2<br>
+&nbsp;&nbsp;name:l,address:a1<br>
 
-&nbsp;&nbsp;name:a,email:e1,address:a3
-&nbsp;&nbsp;name:i,address:a3
-&nbsp;&nbsp;name:k,address:a3
+&nbsp;&nbsp;name:a,email:e1,address:a3<br>
+&nbsp;&nbsp;name:i,address:a3<br>
+&nbsp;&nbsp;name:k,address:a3<br>
 
-&nbsp;&nbsp;name:g,email:e7
+&nbsp;&nbsp;name:g,email:e7<br>
 
-&nbsp;&nbsp;name:m,foo:bar
-&nbsp;&nbsp;name:n,foo:bar
+&nbsp;&nbsp;name:m,foo:bar<br>
+&nbsp;&nbsp;name:n,foo:bar<br>
 
 where each group of lines represents a cluster of entities that is the transitive closure over various attributes. For example, in the first group of lines,
 
