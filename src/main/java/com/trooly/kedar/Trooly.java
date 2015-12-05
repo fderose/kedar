@@ -2,7 +2,7 @@ package com.trooly.kedar;
 
 import java.util.*;
 
-public class Trooly {
+public class    Trooly {
 
     public static void buildUserSet(Map<String, List<String>> usersByEmail, Map<String, List<String>> emailsByUser, Set<String> userSet, String user) {
         if (userSet.contains(user)) {

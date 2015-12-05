@@ -43,13 +43,14 @@ public class TroolyGeneralized {
         Map<Long, List<Attribute>> attributesByRecord = new HashMap<>();
 
         for (Record record : recordsById.values()) {
-            attributesByRecord.put(record.id, new ArrayList<>());
+            List<Attribute> attributes = new ArrayList<>();
+            attributesByRecord.put(record.id, attributes);
             for (Attribute attribute : record.attributes) {
                 if (!recordsByAttribute.containsKey(attribute)) {
                     recordsByAttribute.put(attribute, new ArrayList<>());
                 }
                 recordsByAttribute.get(attribute).add(record.id);
-                attributesByRecord.get(record.id).add(attribute);
+                attributes.add(attribute);
             }
         }
 
