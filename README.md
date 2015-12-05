@@ -2,7 +2,9 @@
 
 This repository contains the original file I sent you, Trooly.java.
 
-It also contains an additional file, TroolyGeneralized.java, which is a "generalization" of Trooly.java. TroolyGeneralized takes a single argument, the name of a file containing input data. In this file, each line defines a record representing an entity. Each record is made up of a list of attributes (delimited by ,). Each attribute consists of an attribute type and an attribute value (delimited by :). Consider, for example, the following line:
+It also contains an additional file, TroolyGeneralized.java, which is a "generalization" of Trooly.java.
+
+TroolyGeneralized takes a single argument, the name of a file containing input data. In this file, each line defines a record representing an entity. Each record is made up of a list of attributes (delimited by ,). Each attribute consists of an attribute type and an attribute value (delimited by :). Consider, for example, the following line:
 
 &nbsp;&nbsp;name:f,email:e5,email:e6,address:a2 // I chose this simple format, but this could be, say, xml.
 
@@ -44,3 +46,5 @@ where each group of lines represents a cluster of entities that is the transitiv
 &nbsp;&nbsp;f is related to h in that they share the same address attribute, a2<br>
 
 and so on.
+
+To add additional attributes, you need to add the new attribute to the enum Attribute.AttributeType. Then, the code will work over attributes of the additional type.
