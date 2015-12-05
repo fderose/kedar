@@ -1,4 +1,4 @@
-package com.trooly.trooly;
+package com.trooly.kedar;
 
 public class Attribute implements Comparable<Attribute> {
     enum AttributeType {

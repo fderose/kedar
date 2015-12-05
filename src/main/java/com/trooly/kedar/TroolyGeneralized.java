@@ -1,4 +1,4 @@
-package com.trooly.trooly;
+package com.trooly.kedar;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
