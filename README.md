@@ -17,6 +17,7 @@ TroolyGeneralized creates clusters (transitive closures) of entities that are co
 
 So, for example, if you run TroolyGeneralized on the file data/input, it produces the following output:
 
+&nbsp;&nbsp;name:b,email:e2,address:a1
 &nbsp;&nbsp;name:c,email:e3,email:e2<br>
 &nbsp;&nbsp;name:d,email:e3,email:e4<br>
 &nbsp;&nbsp;name:e,email:e5,email:e4<br>
